@@ -44,7 +44,7 @@ buildscript {
          project.getProperty("abis").split(",") :
          ["arm64-v8a", "armeabi-v7a", "x86_64", "x86"]
       
-    ndkVersion = "25.0.8355429"
+    ndkVersion = "25.1.8937393"
   }
   repositories {
     google()
