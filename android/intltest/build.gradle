@@ -57,6 +57,7 @@ task prepareTests() {
 // TODO: Figure out how to deduplicate this file and intl/build.gradle
 android {
   compileSdkVersion 24
+  ndkVersion = rootProject.ext.ndkVersion
 
   defaultConfig {
     minSdkVersion 16
@@ -84,7 +85,7 @@ android {
 
   externalNativeBuild {
     cmake {
-      version "3.18.1"
+      version "3.25.2"
       path "../../CMakeLists.txt"
       buildStagingDirectory = "${rootProject.ext.hermes_ws}/staging/intl"
       buildStagingDirectory.mkdirs()
