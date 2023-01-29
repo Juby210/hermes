@@ -31,6 +31,9 @@ jobs:
         with:
           key: android
 
+      - name: Install new NDK
+        run: echo "y" | sudo ${ANDROID_HOME}/tools/bin/sdkmanager --install "ndk;25.0.8355429" --sdk_root=${ANDROID_SDK_ROOT}
+
       - name: Build compiler
         run: |
           cmake -S . -B build -G Ninja
