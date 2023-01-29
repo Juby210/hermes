@@ -85,7 +85,7 @@ android {
 
   externalNativeBuild {
     cmake {
-      version "3.25.2"
+      version "3.19.7"
       path "../../CMakeLists.txt"
       buildStagingDirectory = "${rootProject.ext.hermes_ws}/staging/intl"
       buildStagingDirectory.mkdirs()
